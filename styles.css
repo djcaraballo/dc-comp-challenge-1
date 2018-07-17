@@ -181,7 +181,7 @@ button {
   .image-section {
     /*border: 1px dashed;*/
     background-image: url(images/mrc_djc.jpg);
-    background-position: bottom 0px left 550px;
+    background-position: bottom 0px left 95%;
     background-size: 208%;
     height: 815px;
     width: 1410px;
