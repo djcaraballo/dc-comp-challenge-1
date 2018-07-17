@@ -43,14 +43,19 @@ body {
 
 /*SECTION STYLING*/
 .wrapper {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   grid-gap: 0;
   grid-template-areas: 
-    "header header"
-    "sidebar sidebar"
-    "content content"
-    "main main"
-    "footer footer";
+  "header header" 
+  "sidebar sidebar"  
+  "main main" 
+  "footer footer";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 75%;
+  width: 100%;
 }
 
 /*ICON BOX STYLING*/
