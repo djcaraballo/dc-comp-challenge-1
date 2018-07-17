@@ -1,0 +1,168 @@
+/*BODY STYLING*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(images/MRC.jpg);
+    background-size: 375px 480px;
+    margin: 0; 
+    color: white; 
+}
+
+.header-photo {
+  width: 266px;
+  height: 200px;
+}
+
+.slide-show-nav {
+  height: 20px;
+  width: 10px;
+}
+
+.right-arrow,
+.left-arrow {
+  height: 20px;
+  width: 20px;
+}
+
+
+
+/*SECTION STYLING*/
+.wrapper {
+  display: grid;
+  grid-gap: 0;
+  grid-template-areas: 
+    "header header"
+    "sidebar sidebar"
+    "content content"
+    "main main"
+    "footer footer";
+  margin-top: 240px;
+}
+
+/*ICON BOX STYLING*/
+.icon-box {
+  height: 9rem;
+  width: 11.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.large-icon {
+  height: 50px;
+  width: 50px;
+}
+
+.small-icon {
+  height: 10px;
+  width: 10px;
+}
+
+p {
+  margin-top: 2px;
+}
+
+button {
+  color: white;
+  height: 20px;
+  width: 80px;
+  border: 2px solid #FFFFFF;
+  background: none;
+}
+
+/*BOX1 STYLING*/
+.box1 {
+  background: linear-gradient(#75824E, #A12090);
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.bio-text {
+  font-size: 10pt;
+  text-align: start;
+  padding-left: 10px;
+  margin-bottom: 7px;
+  font-weight: 300;
+}
+
+.bio-title {
+  font-size: 14pt;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+/*BOX2 STYLING*/
+.box2 {
+  background: linear-gradient(#520078, #A14C96);
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+/*BOX3 STYLING*/
+.box3 {
+  background: linear-gradient(#6B4E78, #467B33);
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+/*BOX4 STYLING*/
+.box4 {
+  background: linear-gradient(#212C00, #540049);
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+/*BOX5 STYLING*/
+.box5 {
+  background: linear-gradient(#1E002C, #3F4D3A);
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+/*BOX6 STYLING*/
+.box6 {
+  background: linear-gradient(#520078, #A12090);
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+/*BOX7 STYLING*/
+.box7 {
+  background: linear-gradient(#75824E, #A14C96);
+  grid-area: 4 / 1 / 5 / 2;
+}
+
+/*BOX8 STYLING*/
+.box8 {
+  background: linear-gradient(#6B4E78, #467B33);
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 500px) {
+  .wrapper {
+    grid-template-areas:
+      "sidebar header header"
+      "sidebar header header"
+      "content content main"
+      "main footer footer";    
+    grid-template-columns: 2fr 1fr;
+  }
+
+}
+
+@media screen and (min-width: 700px) {
+  .wrapper {
+    grid-template-areas: 
+      "sidebar sidebar sidebar header"
+      "content content main header"
+      "main footer footer header";
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+
+  }
+}
+
+
+
+
+
+
+
+
+
