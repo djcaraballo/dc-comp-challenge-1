@@ -1,48 +1,44 @@
 /*BODY STYLING*/
 body {
-    font-family: 'Montserrat', sans-serif;
     background-image: url(images/MRC.jpg);
     background-size: 375px 480px;
-    margin: 0; 
-    color: white; 
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh; 
+    margin: 0;
+    width: 100vw;
 }
 
 .image-section {
+  align-items: flex-end;
   background-image: url(images/mrc_djc.jpg);
   background-size: 100%;
+  display: flex;
+  flex-direction: column;  
   height: 260px;
   width: 376px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
 }
 
 .slide-show-nav {
   height: 50px;
-  width: 45px;
   padding-right: 10px;
+  width: 45px;
 }
 
 .arrow-container {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 100%;
   width: 100%;
-  align-items: center;
 }
 
 .right-arrow,
 .left-arrow {
   height: 50px;
   width: 50px;
-
 }
-
-.right-arrow {
-
-}
-
 
 
 /*SECTION STYLING*/
@@ -59,12 +55,12 @@ body {
 
 /*ICON BOX STYLING*/
 .icon-box {
-  height: 8.70rem;
-  width: 11.75rem;
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   flex-direction: column;
+  height: 8.70rem;
+  justify-content: center;
+  width: 11.75rem;
 }
 
 .large-icon {
@@ -82,11 +78,11 @@ p {
 }
 
 button {
+  background: none;
+  border: 2px solid #FFFFFF;  
   color: white;
   height: 20px;
   width: 80px;
-  border: 2px solid #FFFFFF;
-  background: none;
 }
 
 /*BOX1 STYLING*/
@@ -97,10 +93,10 @@ button {
 
 .bio-text {
   font-size: 10pt;
-  text-align: start;
-  padding-left: 10px;
-  margin-bottom: 7px;
   font-weight: 300;
+  margin-bottom: 7px;
+  padding-left: 10px;
+  text-align: start;
 }
 
 .bio-title {
@@ -158,56 +154,53 @@ button {
 @media screen and (min-width: 500px) {
 
   .wrapper {
-    grid-template-areas:
-      "header header header"
-      "main main main"
-      "footer footer footer";    
-    /*grid-template-columns: 2fr 1fr;*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
-
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "footer footer footer";
   }
-
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width : 768px) {
   .wrap-all {
     display: flex;
     flex-direction: row-reverse;
+    height: 100vh;
   }
 
   .image-section {
-    /*border: 1px dashed;*/
+    align-items: flex-end;
     background-image: url(images/mrc_djc.jpg);
-    background-position: bottom 0px left 95%;
-    background-size: 208%;
-    height: 815px;
-    width: 1410px;
-    /* width: 100%; */
+    background-position: bottom 0% left 98%;
+    background-size: 356%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    height: 100%;
     overflow: hidden;
+    width: 40%;
   }
 
   .wrapper {
     display: grid;
     grid-template-areas: 
-      "header header header"
-      "main main main"
-      "footer footer footer";  
+      "header header header" 
+      "main main main" 
+      "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+    width: 60%;
   }
 
   .icon-box {
-    height: 17rem;
-    width: 17rem;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    display: flex;
     flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
   }
 
   .large-icon {
@@ -228,30 +221,30 @@ button {
     padding-left: 30px;
   }
   button {
+    background: none;
+    border: 2px solid #FFFFFF;
     color: white;
+    font-size: 16pt;
     height: 60px;
     width: 165px;
-    border: 2px solid #FFFFFF;
-    background: none;
     margin: 5px;
-    font-size: 16pt;
   }
 
   /*BOX1 STYLING*/
   .box1 {
+    align-items: flex-start;
     background: linear-gradient(#75824E, #A12090);
     grid-area: 1 / 1 / 2 / 3;
-    width: 100%;
     justify-content: normal;
-    align-items: flex-start;
+    width: 100%;
   }
 
   .bio-text {
     font-size: 14pt;
-    text-align: start;
-    padding-left: 35px;
-    margin-bottom: 20px;
     font-weight: 300;
+    margin-bottom: 20px;
+    padding-left: 35px;
+    text-align: start;
   }
 
   .bio-title {
@@ -301,7 +294,6 @@ button {
     background: linear-gradient(#6B4E78, #467B33);
     grid-area: 3 / 3 / 4 / 4;
   }
-
 }
 
 
